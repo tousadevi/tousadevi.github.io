@@ -1,0 +1,174 @@
+/* CSS Document */
+body {
+	margin:0; padding:0; color:#B8B8B8; 
+	background:#282828 url(images/main_bg.gif) 0 0 repeat-x;
+	font:normal 12px/14px Arial, Helvetica, sans-serif;
+}
+div, a, p, img, ul, h1, h2, h3, dl, dt, dd {
+	margin:0; padding:0;
+}
+.spacer {
+	font-size:0; line-height:0; clear:both;
+}
+ul {
+	list-style:none;
+}
+a {
+	text-decoration:none; outline:none;
+}
+img {
+	border:none;
+}
+/*-------- HEADER ----------*/
+div#header {
+	width:780px; margin:0 auto; height:276px; position:relative; color:#AC9B56;
+	background:#393939 url(images/hdr_bg.jpg) 0 16px no-repeat;
+}
+div#header img {
+	position:absolute; left:359px; top:162px;
+}
+div#header ul {
+	height:25px; padding:50px 0 0 325px;
+}
+div#header ul li {
+	float:left; padding:0 10px; border-left:#868587 1px solid;height:25px;
+}
+div#header ul li a {
+	color:#AC9B56; font-weight:bold; line-height:25px; background-color:#282629;
+}
+div#header ul li a:hover {
+	color:#78692F; background-color:#282629;
+}
+div#header ul li.noBdr {
+	border:none;
+}
+/*--------------------- BODY ----------------------*/
+div#body {
+	width:744px; margin:0 auto; padding:12px 0 35px 36px;
+}
+div#body h2 {
+	font-family:Georgia, "Times New Roman", Times, serif; font-size:18px; font-weight:bold;
+	color:#CDAB7A; text-transform:capitalize;
+} 
+/*---------- LEFT PANEL -----------*/
+div#body div.leftPanel {
+	width:209px; padding:0 32px 0 13px; float:left;
+}
+div#body div.leftPanel h2 {	
+	padding:15px 0 10px 13px;
+} 
+div#body div.leftPanel p.news {
+	padding:16px 30px 33px 18px; background-color:#2C2C2C; font-size:11px; color:#B8B8B8;
+}
+div#body div.leftPanel dl {
+	padding:16px 30px 0 18px; background-color:#2C2C2C; color:#B8B8B8;
+}
+div#body div.leftPanel dl dt {
+	font-size:11px; color:#CDAB7A; font-weight:bold; padding:0 0 9px 0; 
+	background-color:#2C2C2C;
+}
+div#body div.leftPanel dl dd {
+	font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	padding:0 0 12px 0;
+}
+div#body div.leftPanel dl dd span {
+	text-align:right; display:block;
+}
+/*---------- RIGHT PANEL -----------*/
+div#body div.rightPanel {
+	width:479px; float:left;
+}
+div#body div.rightPanel h2 {	
+	padding:10px 0 10px 13px;
+} 
+div#body div.rightPanel div.welcome {
+	background:#2C2C2C; padding:5px 24px 17px 24px; color:#B8B8B8;
+}
+div#body div.rightPanel div.welcome p {
+	padding:15px 0 0 0;
+}
+/*-- GALLERY --*/
+div#body div.rightPanel div.gallery {
+	padding:25px 0 18px 21px; background:#000; width:441px; margin:4px 0 0 0;
+	color:#CDAB7A;
+}
+div#body div.rightPanel div.gallery ul.gal {
+	 font-size:0; line-height:0;
+}
+div#body div.rightPanel div.gallery ul.gal li {
+	padding:0 9px 37px 0; float:left; margin:0; width:134px; height:100px;
+}
+div#body div.rightPanel div.gallery ul.gal li a img {
+	border:#fff 2px solid;
+}
+div#body div.rightPanel div.gallery ul.preNextBtns {
+	padding:8px 0 0 8px;
+}
+div#body div.rightPanel div.gallery ul.preNextBtns li {
+	float:left; color:#CDAB7A; font-weight:bold; font-size:9px;
+	font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+	background-color:#000;
+}
+div#body div.rightPanel div.gallery ul.preNextBtns li.left {
+	padding-left:97px;
+}
+div#body div.rightPanel div.gallery ul.preNextBtns li.right {
+	padding-left:105px;
+}
+div#body div.rightPanel div.gallery ul.preNextBtns li a {
+	 color:#CDAB7A; background-color:#000; padding:0 0 0 3px;
+}
+div#body div.rightPanel div.gallery ul.preNextBtns li a:hover {
+	color:#A68657; background-color:#000;
+}
+div#body div.rightPanel div.gallery ul.preNextBtns li a.rightMar {
+	margin-right:3px;
+}
+/*--------- FOOTER --------*/
+div#footer {
+	background:#393939 url(images/footer.gif) 0 0 repeat-x;
+}
+div#footer ul {
+	height:25px; padding:12px 0 0 0; width:420px; margin:0 auto;
+}
+div#footer ul li {
+	float:left; border-left:#868587 1px solid; height:19px;
+}
+div#footer ul li a {
+	color:#CDB96A; font-weight:bold; line-height:19px; background-color:#393939;
+	display:block; padding:0 10px; font-size:11px;
+}
+div#footer ul li a:hover {
+	color:#E1D08F; background-color:#282629;
+}
+div#footer ul li.noBdr {
+	border:none;
+}
+div#footer p {	
+	padding:0 0 12px; text-align:center; font-size:10px;
+}
+div#footer p a {
+color:#B8B8B8; text-decoration:none;
+}
+div#footer p a:hover {
+color:#CDB96A;
+}
+/*------ MISCLENIOUS --------*/
+a.moreBtn {
+	font-weight:bold; color:#CDAB7A; font-size:11px;
+}
+a.moreBtn:hover {
+	color:#9D8563;
+}
+.topPad {
+	padding-top:18px !important;
+}
+.leftPad {
+	padding-left:38px !important;
+}
+.noPad {
+	padding-bottom:0 !important;
+}
+.noPad1 {
+	padding-right:0 !important;
+}

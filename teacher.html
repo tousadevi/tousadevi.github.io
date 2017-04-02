@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php
+mysql_connect("localhost","root","", "karuschool");
+
+ $username = $_SESSION['name'];
+ echo $username;
+ 
+ ?> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Teacher</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style1.css" />
+
+<script src="jscripts/requests.js"></script>
+
+</head>
+<body>
+
+<div id="header"> <a href="#"><img src="images/logo.jpg" alt="" /></a>
+  <ul>
+    <li class="noBdr"><a href="#">Home</a></li>
+    <li><a href="#">photos</a></li>
+    <li><a href="#">my details</a></li>
+    <li><a href="#">student logs</a></li>
+    <li><a href="#">student list</a></li>
+    <li><a href="#">log out</a></li>
+  </ul>
+</div>
+<div id="body">
+  <div class="leftPanel">
+    <h2>My News</h2>
+    <p class="news" >This is Photography Portfolio, a free, fully standards-compliant CSS template designed by Free CSS Templates. <br />
+      This free template is released under a Creative Commons Attributions 2.5 license, so you’re pretty much free to do whatever you want with it (even use it commercially) provided you keep the links in the footer intact. Aside from that, have fun with it :) </p>
+    <h2>Exihibirions</h2>
+    <dl>
+      <dt>January 5, 2007</dt>
+      <dd><strong>LoremIpsum</strong> is simply dummy text of the  industry. content heretmaking it look lireadable English. </dd>
+      <dt>January 5, 2007</dt>
+      <dd><strong>LoremIpsum</strong> is simply dummy text of the  industry. content heretmaking it look lireadable English. </dd>
+      <dt>January 5, 2007</dt>
+      <dd><strong>LoremIpsum</strong> is simply dummy text of the  industry. content heretmaking it look lireadable English. <span><a href="#" class="moreBtn">more...</a></span></dd>
+    </dl>
+  </div>
+  <div class="rightPanel">
+    <div class="welcome">
+      <h2>Upload your materials</h2>
+      <p><strong>welcome <?php echo $username;?></strong><br />
+       <iframe height="100%" width="110%"  name="iframe_a" scrolling="no" frameborder="0" src = "up.php"></iframe>
+</p>
+      <p class="topPad"><strong></strong> </p>
+    </div>
+    <h2 class="leftPad">Photography portfolio</h2>
+    <div class="gallery">
+      <ul class="gal">
+        <li><a href="#"><img src="images/gal_pic1.jpg" alt="" width="130" height="96" /></a></li>
+        <li><a href="#"><img src="images/gal_pic2.jpg" alt="" width="130" height="96" /></a></li>
+        <li class="noPad1"><a href="#"><img src="images/gal_pic3.jpg" alt="" width="129" height="96" /></a></li>
+        <li class="noPad"><a href="#"><img src="images/gal_pic4.jpg" alt="" width="129" height="96" /></a></li>
+        <li class="noPad"><a href="#"><img src="images/gal_pic5.jpg" alt="" width="129" height="96" /></a></li>
+        <li class="noPad noPad1"><a href="#"><img src="images/gal_pic6.jpg" alt="" width="128" height="96" /></a></li>
+      </ul>
+      <br class="spacer" />
+      <ul class="preNextBtns">
+        <li><a href="#"> &lt;&lt; Prev</a></li>
+        <li class="left"><a href="#" class="rightMar">01</a>|</li>
+        <li><a href="#" class="rightMar">02</a>|</li>
+        <li><a href="#" class="rightMar">03</a>|</li>
+        <li><a href="#" class="rightMar">04</a>|</li>
+        <li><a href="#" class="rightMar">05</a></li>
+        <li class="right"><a href="#">Next &gt;&gt;</a></li>
+      </ul>
+      <br class="spacer" />
+      <br class="spacer" />
+    </div>
+  </div>
+  <br class="spacer" />
+</div>
+<div id="footer">
+  <ul>
+    <li class="noBdr"><a href="#">Home</a></li>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Exhibitions</a></li>
+    <li><a href="#">Contact us</a></li>
+  </ul>
+  <br class="spacer" />
+ <p>2016 Copyright,All rights reserved. <a href="" style="color:#ffffff;">educational website</a> designed by karishma tousadevi gobindoo</span> </a></p>																																																																		
+	</div>
+</body>
+</html>

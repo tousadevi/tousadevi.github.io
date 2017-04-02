@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#main {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+}
+
+#main div:nth-of-type(1) {flex-grow: 1;}
+#main div:nth-of-type(2) {flex-grow: 1;}
+#main div:nth-of-type(3) {flex-grow: 1;}
+
+#myBlueDiv {
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {flex-grow: 8;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {flex-grow: 8;}
+}
+p.heading {
+    color: purple;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+p.body{
+	font-family:"font-family: times, serif; 
+	font-size:26pt;
+	font-style:italic";
+	}
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+105 { left: -400%; }
+
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+p.inspiration{
+text-align:center;
+font-family:"Comic Sans MS", cursive, sans-serif;
+font-size:18;}
+#homepage{
+ background-image: url("paper.jpg");
+    background-color: #cccccc;}
+nt-size:50;
+	}
+</style>
+
+</head>
+<body>
+
+<form id ="homepage" >
+<div id="main">
+  <div style="background-color:coral;"><img src="naruto.gif" alt="boy" style="width:100%;height:100%;"></div>
+  <div style="background-color:lightblue;" id="myBlueDiv"><p class="heading">welcome to KaruPlaySchool</p></div>
+  <div style="background-color:khaki;"><img src="sakura.gif" alt="girl" style="width:100%;height:100%;"></div>
+</div>
+<p class ="inspiration"> YOU GOT IT ALL, BELIEVE IT !!! </p>
+<div id="slider">
+<figure>
+<img src="slide1.jpg" alt>
+<img src="slide4.jpg" alt>
+<img src="slide5.jpg" alt>
+<img src="slide8.jpg" alt>
+<img src="slide10.jpg" alt>
+</figure>
+<div>Students</div>
+<p >There is only one corner of the universe you can be certain of improving and that's your own self.  Small acts when multiplied by millions of people, can transform
+the the world.  It's easier to go down the hill but the view is much better at the top.  Keep your eyes on the stars and your feet on the ground.  Perfection is 
+not attainable but if we chase perfection we can catch excellence... </p>
+</div>
+
+
+
+
+
+
+
+
+
+</form>
+</body>
+</html>
+

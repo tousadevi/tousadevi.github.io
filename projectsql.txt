@@ -1,0 +1,22 @@
+
+//logs table foreign key
+ALTER TABLE logs
+ADD CONSTRAINT fk_registrationid
+    FOREIGN KEY (registrationid)
+    REFERENCES registration (registrationid)
+    ON DELETE CASCADE;
+
+
+//files table foreign key
+ALTER TABLE files
+ADD CONSTRAINT fk_filesregistrationid
+   FOREIGN KEY (registrationid)
+   REFERENCES registration(registrationid)
+   ON DELETE CASCADE;
+
+//comment table foreign key
+ALTER TABLE comments
+ADD CONSTRAINT fk_commentregistrationid
+   FOREIGN KEY (registrationid)
+   REFERENCES registration(registrationid)
+   ON DELETE CASCADE;
